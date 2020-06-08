@@ -6,5 +6,5 @@
   pacman:
     name: 
       - npm
-      - node
+      - nodejs
     state: present
