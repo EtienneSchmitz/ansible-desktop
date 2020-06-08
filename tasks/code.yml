@@ -19,3 +19,8 @@
     state: started 
     enabled: yes 
     name: docker.service
+- name: Docker priviliegies
+  user:
+    name: etienne
+    groups: docker
+    append: yes
