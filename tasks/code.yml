@@ -14,3 +14,6 @@
       - docker
       - docker-compose
     state: present
+- name: Docker daemon
+  sudo: yes
+  command: systemctl enable --now docker.service
