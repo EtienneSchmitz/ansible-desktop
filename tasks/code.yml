@@ -8,19 +8,3 @@
       - npm
       - nodejs
     state: present
-- name: Install docker
-  pacman:
-    name:
-      - docker
-      - docker-compose
-    state: present
-- name: Docker daemon
-  systemd:
-    state: started 
-    enabled: yes 
-    name: docker.service
-- name: Docker priviliegies
-  user:
-    name: etienne
-    groups: docker
-    append: yes
