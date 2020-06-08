@@ -2,3 +2,6 @@
   pacman: 
     name: code
     state: present
+- name: Install jetbrains-toolbox
+  aur:
+    name: jetbrains-toolbox
