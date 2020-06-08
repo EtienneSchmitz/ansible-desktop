@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install Visual studio code
+    pacman: 
+        name:
+        - code
+        state: present
