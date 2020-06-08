@@ -1,7 +1,9 @@
 - hosts: localhost
   become: true
+  pre_tasks:
+    - name: update repositories
+      pacman: update_cache=yes
+      changed_when: False
+
   tasks:
-  - name: Install Visual studio code
-    pacman: 
-        name: code
-        state: present
+    - include: tasks/code.yml

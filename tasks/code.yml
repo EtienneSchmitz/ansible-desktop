@@ -1,0 +1,10 @@
+- name: Install Visual studio code
+  pacman: 
+    name: code
+    state: present
+- name: Install node
+  pacman:
+    name: 
+      - npm
+      - node
+    state: present
