@@ -3,6 +3,5 @@
   tasks:
   - name: Install Visual studio code
     pacman: 
-        name:
-        - code
+        name: code
         state: present
