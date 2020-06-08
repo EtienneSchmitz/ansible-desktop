@@ -2,9 +2,3 @@
   pacman: 
     name: code
     state: present
-- name: Install node
-  pacman:
-    name: 
-      - npm
-      - nodejs
-    state: present
