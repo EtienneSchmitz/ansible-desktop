@@ -6,10 +6,7 @@
     state: present
 - name: Install vue, angular, ionic
   npm:
-    name:
-      - @vue/cli
-      - @angular/cli
-      - @ionic/cli
+    name: @vue/cli @angular/cli @ionic/cli
     global: yes
 - name: Install npm-check-updates
   npm:
