@@ -4,9 +4,17 @@
       - npm
       - nodejs
     state: present
-- name: Install vue, angular, ionic
+- name: Install vue
   npm:
-    name: @vue/cli @angular/cli @ionic/cli
+    name: "@vue/cli"
+    global: yes
+- name: Install angular
+  npm:
+    name: "@angular/cli"
+    global: yes
+- name: Install ionic
+  npm:
+    name: "@ionic/cli"
     global: yes
 - name: Install npm-check-updates
   npm:
