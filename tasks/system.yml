@@ -7,3 +7,7 @@
   pacman: 
     name: discord
     state: present
+
+- name: Install Google chrome
+  aur: name=google-chrome
+  become: false
