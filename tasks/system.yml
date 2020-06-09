@@ -11,3 +11,7 @@
 - name: Install Google chrome
   aur: name=google-chrome
   become: false
+
+- name: Install Spotify
+  aur: name=spotify
+  become: false
