@@ -18,3 +18,8 @@
     name: user.email
     scope: system
     value: hello@etienne-schmitz.com
+
+- name: Install python 2 (backwards compatible)
+  pacman: 
+    name: python2
+    state: present

@@ -2,3 +2,8 @@
   pacman: 
     name: yay
     state: present
+
+- name: Install discord
+  pacman: 
+    name: discord
+    state: present
