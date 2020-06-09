@@ -4,6 +4,17 @@
     name: code
     state: present
 
-- name: Install debugging tools (AUR)
+- name: Install Jetbrains Toolbox
   aur: name=jetbrains-toolbox
   become: false
+
+- name: Configure git name
+  git_config:
+    name: user.name
+    scope: system
+    value: Etienne Schmitz
+- name: Configure git email
+  git_config:
+    name: user.email
+    scope: system
+    value: hello@etienne-schmitz.com
