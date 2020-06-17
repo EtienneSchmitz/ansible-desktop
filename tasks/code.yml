@@ -1,8 +1,7 @@
 ---
 - name: Install Visual studio code
-  pacman: 
-    name: code
-    state: present
+  aur: name=visual-studio-code-bin
+  become: false
 
 - name: Install Jetbrains Toolbox
   aur: name=jetbrains-toolbox
@@ -27,3 +26,16 @@
 - name: Install termius
   aur: name=termius
   become: false 
+
+- name: Install Deno
+  aur: name=deno
+  become: false
+
+- name: Install Oh my Zsh
+  aur: name=oh-my-zsh-git
+  become: false
+
+- name: Install Utils for dns
+  pacman: 
+    name: dnsutils
+    state: present
