@@ -1,0 +1,8 @@
+- name: Run the equivalent of "pacman -Syu"
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: Update with yay
+  aur: upgrade=yes
+  become: false

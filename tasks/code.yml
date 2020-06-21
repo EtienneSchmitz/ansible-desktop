@@ -39,3 +39,16 @@
   pacman: 
     name: dnsutils
     state: present
+
+- name: Install java (openjdk)
+  pacman:
+      name:
+        - jdk8-openjdk
+        - jdk11-openjdk
+        - jdk14-openjdk
+      state: present
+
+- name: Install gradle
+  pacman:
+    name: gradle
+    state: present
