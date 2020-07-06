@@ -20,3 +20,7 @@
   npm:
     name: npm-check-updates
     global: yes
+- name: Install moleculer
+  npm:
+    name: moleculer-cli
+    global: yes
