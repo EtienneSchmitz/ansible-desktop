@@ -3,6 +3,7 @@
     name: 
       - npm
       - nodejs
+      - yarn
     state: present
 - name: Install vue
   npm:
