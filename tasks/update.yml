@@ -3,6 +3,11 @@
     update_cache: yes
     upgrade: yes
 
+- name: Install yet another yogurt (pacman for aur)
+  pacman: 
+    name: yay
+    state: present
+
 - name: Update with yay
   aur: upgrade=yes
   become: false

@@ -25,15 +25,18 @@
 
 - name: Install termius
   aur: name=termius
-  become: false 
+  become: yes
+  become_user: aur_builder
 
 - name: Install Deno
   aur: name=deno
-  become: false
+  become: yes
+  become_user: aur_builder
 
 - name: Install Oh my Zsh
   aur: name=oh-my-zsh-git
-  become: false
+  become: yes
+  become_user: aur_builder
 
 - name: Install Utils for dns
   pacman: 
@@ -54,8 +57,9 @@
     state: present
 
 - name: Install postman
-  aur: name=postman
-  become: false 
+  aur: name=postman-bin
+  become: yes
+  become_user: aur_builder
 
 - name: Install filezilla
   pacman:

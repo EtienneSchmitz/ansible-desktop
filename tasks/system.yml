@@ -1,8 +1,3 @@
-- name: Install yet another yogurt (pacman for aur)
-  pacman: 
-    name: yay
-    state: present
-
 - name: Install discord
   pacman: 
     name: discord
@@ -10,8 +5,10 @@
 
 - name: Install Google chrome
   aur: name=google-chrome
-  become: false
+  become: yes
+  become_user: aur_builder
 
-- name: Install Spotify
-  aur: name=spotify
-  become: false
+# - name: Install Spotify
+#   aur: name=spotify
+#   become: yes
+#   become_user: aur_builder
